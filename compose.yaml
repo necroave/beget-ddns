@@ -1,0 +1,12 @@
+services:
+  beget-ddns:
+    image: necroave/beget-ddns:0.0.1
+    restart: unless-stopped
+    environment:
+      BEGET_LOGIN: "BEGET_LOGIN"
+      BEGET_PASSWORD: "BEGET_PASSWORD"
+      BEGET_FQDN: "BEGET_FQDN"
+      BEGET_A_PRIORITY: "0"
+      IP_CHECK_URL: "https://2ip.ru"
+      CHECK_INTERVAL: "2m"
+      UPDATE_ROOT_ON_WILDCARD: true
