@@ -1,8 +1,9 @@
 # Beget DDNS
 
 Minimal Docker container for automatic IPv4 DDNS updates via the [Beget DNS API](https://beget.com/ru/kb/api/funkczii-upravleniya-dns).
-
 The container periodically checks the public IPv4 address, compares it with the configured A record, and updates DNS **only when the IP changes**.
+
+Prebuilt image: necroave/beget-ddns:0.0.1
 
 ## Features
 
