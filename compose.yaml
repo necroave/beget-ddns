@@ -1,7 +1,10 @@
 services:
   beget-ddns:
+    container_name: beget-ddns
     image: necroave/beget-ddns:0.0.1
     restart: unless-stopped
+    mem_limit: 32m
+    cpus: 0.1    
     environment:
       BEGET_LOGIN: "BEGET_LOGIN"
       BEGET_PASSWORD: "BEGET_PASSWORD"
